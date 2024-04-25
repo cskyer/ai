@@ -6,8 +6,6 @@ services:
     build:
       context: .
     restart: always
-    ports:
-      - "8899:3000"
     environment:
       TZ: Asia/Shanghai
     networks:
