@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  ai-server:
+    container_name: ai-server
+    build:
+      context: .
+    restart: always
+    ports:
+      - "8899:3000"
+    environment:
+      TZ: Asia/Shanghai
+    networks:
+      ai-server-network:
+        aliases:
+        - ai-server
+
+networks:
+  ai-server-network:
+    external: true
