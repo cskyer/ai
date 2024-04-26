@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import Provider from "@/app/provider"
 import AppHeader from "@/app/components/app-header"
-import Footer from "@/app/components/layout/footer"
 import AppSide from "@/app/components/app-aside"
 
 import "./globals.css";
