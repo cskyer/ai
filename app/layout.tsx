@@ -23,7 +23,7 @@ const Layout = ({
   children,
 }: Readonly<LayoutProps>) => {
   return (
-    <html lang="en" className="light">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} overflow-hidden`}>
       <Provider>
         <AppHeader />

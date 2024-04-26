@@ -8,3 +8,14 @@
     --header-height: 48px
 }
 
+.light, .light-theme {
+    .moon {
+        display: none;
+    }
+}
+
+.dark, .dark-theme {
+    .sun {
+        display: none;
+    }
+}
