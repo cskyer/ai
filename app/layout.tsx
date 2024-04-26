@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Provider from "@/app/provider";
-import Header from "@/app/components/layout/header";
-import Footer from "@/app/components/layout/footer";
-import Slider from "@/app/components/layout/slider";
+import { ReactNode } from 'react'
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import Provider from "@/app/provider"
+import AppHeader from "@/app/components/app-header"
+import Footer from "@/app/components/layout/footer"
+import AppSide from "@/app/components/app-aside"
+
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,25 +15,28 @@ export const metadata: Metadata = {
   description: "AI Provider by cskyer",
 };
 
-export default function RootLayout({
+interface LayoutProps {
+    children: ReactNode
+}
+
+const Layout = ({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<LayoutProps>) => {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="light">
+      <body className={`${inter.className} overflow-hidden`}>
       <Provider>
-        <Header/>
-        <main className="container mx-auto pt-12">
-          <Slider/>
+        <AppHeader />
+        <main className="flex h-dvh pt-12">
+          <AppSide prefix="/nodejs" />
           <main className="pl-52">
             {children}
           </main>
-          <Footer/>
         </main>
       </Provider>
       </body>
     </html>
   );
 }
+
+export default Layout

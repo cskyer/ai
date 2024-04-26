@@ -1,0 +1,20 @@
+.header_menu {
+  flex: 1;
+
+  :global {
+    .rt-BaseTabList {
+      box-shadow: none;
+
+      .rt-BaseTabListTrigger {
+        height: var(--header-height);
+
+        &:hover {
+          .rt-BaseTabListTriggerInner {
+            border-radius: 999px;
+          }
+        }
+      }
+    }
+
+  }
+}

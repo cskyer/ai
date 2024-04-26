@@ -1,0 +1,29 @@
+.nav_link_item {
+  margin-bottom: 1px;
+
+  :global {
+    .nav_link {
+      display: flex;
+      align-items: center;
+      padding: var(--space-2) var(--space-3);
+      border-radius: 999px;
+      transition: background-color 50ms linear;
+      user-select: none;
+      min-height: var(--space-6);
+      color: var(--gray-12);
+
+      &:hover {
+        background-color: var(--accent-a4);
+      }
+
+      &.nav_link_active {
+        background-color: var(--accent-a5);
+
+        &:active {
+          background-color: var(--accent-b5);
+        }
+      }
+    }
+  }
+}
+
