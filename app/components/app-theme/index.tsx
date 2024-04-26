@@ -1,6 +1,6 @@
 "use client"
 
-import { useCallback, useEffect } from 'react'
+import { useCallback } from 'react'
 import { Tooltip, Button } from "@radix-ui/themes"
 import { useTheme } from 'next-themes'
 import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
