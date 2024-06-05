@@ -1,19 +1,19 @@
-"use client"
+'use client'
 
 import { useCallback } from 'react'
-import { Tooltip, Button } from "@radix-ui/themes"
+import { Tooltip, Button } from '@radix-ui/themes'
 import { useTheme } from 'next-themes'
-import { SunIcon, MoonIcon } from "@radix-ui/react-icons";
+import { SunIcon, MoonIcon } from '@radix-ui/react-icons'
 
 const AppTheme = () => {
     const { theme, systemTheme, setTheme } = useTheme()
 
     const changeTheme = useCallback(() => {
-        const resolvedTheme = theme === 'system' ? systemTheme : theme;
-        const newTheme = resolvedTheme === 'dark' ? 'light' : 'dark';
-        const newThemeMatchesSystem = newTheme === systemTheme;
+        const resolvedTheme = theme === 'system' ? systemTheme : theme
+        const newTheme = resolvedTheme === 'dark' ? 'light' : 'dark'
+        const newThemeMatchesSystem = newTheme === systemTheme
         setTheme(newThemeMatchesSystem ? 'system' : newTheme)
-    }, [systemTheme, theme, setTheme]);
+    }, [systemTheme, theme, setTheme])
 
     return (
         <Tooltip content="Toggle theme">

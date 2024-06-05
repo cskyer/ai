@@ -1,5 +1,5 @@
-import { ReactNode } from "react"
-import {Box, Flex, Link, Text} from "@radix-ui/themes"
+import { ReactNode } from 'react'
+import {Box, Flex, Link, Text} from '@radix-ui/themes'
 
 import styles from './style.module.scss'
 
@@ -14,6 +14,8 @@ const NavLink = ({
     href,
     active
 }: NavLinkProps) => {
+    const {a, b} = {a: 1, b:2}
+
     return (
         <Box className={styles.nav_link_item}>
             <Link className={active ? 'nav_link_active nav_link' : 'nav_link'} href={href} underline="none">

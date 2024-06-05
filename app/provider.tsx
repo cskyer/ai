@@ -1,6 +1,6 @@
 'use client'
-import {ReactNode} from "react";
-import {Theme} from "@radix-ui/themes"
+import {ReactNode} from 'react'
+import {Theme} from '@radix-ui/themes'
 import { ThemeProvider } from 'next-themes'
 
 interface ProviderProps {

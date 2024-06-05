@@ -1,7 +1,7 @@
-"use client"
+'use client'
 
 import { Flex, TabNav } from '@radix-ui/themes'
-import {usePathname} from "next/navigation"
+import { usePathname } from 'next/navigation'
 
 import styles from './style.module.scss'
 

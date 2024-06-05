@@ -1,5 +1,5 @@
-import { Tooltip, Button, Link } from "@radix-ui/themes"
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Tooltip, Button, Link } from '@radix-ui/themes'
+import {GitHubLogoIcon} from '@radix-ui/react-icons'
 
 const ViewGithub = () => {
     return (

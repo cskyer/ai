@@ -1,6 +1,6 @@
 import { ScrollArea, Box } from '@radix-ui/themes'
 
-import NavLink from "@/app/components/nav-link"
+import NavLink from '@/app/components/nav-link'
 
 import styles from './style.module.scss'
 

@@ -1,6 +1,6 @@
-import { Flex, Box } from "@radix-ui/themes"
-import AppTheme from "@/app/components/app-theme"
-import ViewGithub from "@/app/components/view-github";
+import { Flex, Box } from '@radix-ui/themes'
+import AppTheme from '@/app/components/app-theme'
+import ViewGithub from '@/app/components/view-github'
 
 const headerAction = () => {
     return (
